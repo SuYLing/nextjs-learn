@@ -12,5 +12,9 @@ export const SignoutButton = () => {
         onSuccess: () => router.replace("/login"),
       },
     });
-  return <Button onClick={signOut}>signOut</Button>;
+  return (
+    <Button onClick={signOut} variant={"outline"}>
+      sign out
+    </Button>
+  );
 };

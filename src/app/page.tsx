@@ -4,5 +4,5 @@ import { redirect } from "next/navigation";
 export default async function LandingPage() {
   const session = await getSession();
   if (!session) redirect("/login");
-  return <div></div>;
+  return redirect("/home");
 }
